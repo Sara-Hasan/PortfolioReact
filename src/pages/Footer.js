@@ -5,8 +5,7 @@ function Footer() {
     <div>
       <footer>
         <div class="container">
-          <h2> Sarah Hasan </h2>
-          <div class="line"> </div>
+          {/* <div class="line"> </div> */}
           <div class="Account">
             <Link to="https://www.linkedin.com/in/sarah-alhabash-%D8%B3-a569201ab/">
               <i class="fab fa-linkedin-in"></i>

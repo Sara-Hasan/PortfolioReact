@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import About from "../pages/About";
 
 function Home() {
@@ -21,7 +22,7 @@ function Home() {
               </div>
               <div className="button">
                 {" "}
-                <a href="#Portfolio"> PORTOFOLIO </a>{" "}
+                <Link to="/portfolio"> PORTOFOLIO </Link>{" "}
               </div>
             </div>
           </div>
