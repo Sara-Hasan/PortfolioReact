@@ -1,0 +1,577 @@
+@import url("http://fonts.cdnfonts.com/css/sukar");
+@import url("http://fonts.cdnfonts.com/css/pt-mono");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #282a39;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+}
+h1,
+h2 {
+  font-family: suker;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+ul li {
+  display: inline;
+}
+ul li a:hover {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
+.line {
+  width: 100px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  background-color: #fe4a57;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+section {
+  padding: 120px 0;
+}
+/************** Header ****************/
+header {
+  background-image: url("https://images.pexels.com/photos/461082/pexels-photo-461082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 650px;
+  color: #fff;
+  width: 100%;
+}
+.header {
+  background: rgba(0, 0, 0, 0.5);
+  height: 650px;
+  width: 100%;
+}
+/************** Nav ****************/
+
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  position: fixed;
+  z-index: 1;
+}
+label.logo {
+  color: #fe4a57;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: 1500;
+}
+label.logo a {
+  color: #fff;
+}
+label.logo i {
+  color: #fe4a57;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: #fe4a57;
+  padding-bottom: 7px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.76);
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+  nav ul li a:hover {
+    color: #fe4a57;
+    padding-bottom: 7px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.76);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/************** Head ****************/
+header .head {
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+  font-family: sukar;
+  line-height: 2;
+  padding: 140px 0 0 0;
+}
+.head h3 {
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+.head h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: "PT Mono", sans-serif;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+.button:hover {
+  box-shadow: 0 0 20px #f00f1e;
+}
+.button a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/************** About ****************/
+
+section.About {
+  background-color: #282a39;
+  color: #fff;
+}
+section.About .flex-con {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+section.About p {
+  margin-top: 30px;
+}
+section.About .line {
+  margin-top: 30px;
+}
+section.About .flex-con > div {
+  padding: 10px;
+}
+section.About .item1 {
+  flex: 40%;
+}
+section.About .flex-con .item2 {
+  font-weight: 700;
+}
+section.About .info {
+  display: flex;
+  flex: 40%;
+  margin-top: 30px;
+  width: 25%;
+}
+section .About .info .item2 h6 {
+  display: inline;
+}
+section.About .info .item2 {
+  flex: 50%;
+  text-align: right;
+  margin-right: 30px;
+}
+section.About .info .item3 {
+  flex: 50%;
+  text-align: left;
+}
+section.About .item2 i {
+  display: block;
+  padding: 5px 5px;
+  color: #fe4a57;
+}
+section.About .item2 i:nth-of-type(3) {
+  margin-right: -4px;
+}
+.item2 img {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  width: 370px;
+  height: 370px;
+}
+
+/************** Service ****************/
+#Service {
+  background-color: #323647;
+}
+#Service .content {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.sev {
+  margin: 0 40px;
+}
+.circle {
+  width: 250px;
+  height: 250px;
+  background-color: #282a39;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle:hover {
+  box-shadow: 0 0 10px #f00f1e;
+  color: #fff;
+}
+.circle i {
+  color: #fe4a57;
+  font-size: 60px;
+  line-height: 250px;
+}
+#Service h3 {
+  color: #fff;
+  margin: 50px 0;
+  text-align: center;
+}
+
+/************** Skills ****************/
+section.Skill {
+  padding: 80px 0px 50px 0px;
+  background-color: #282a39;
+}
+section.Skill .myskill {
+  box-shadow: 0px 5px 25px 0px rgb(0, 0, 0, 0.2);
+  padding: 50px;
+}
+section.Skill h2 {
+  color: #fff;
+  line-height: 2.5;
+  font-size: 25px;
+  text-align: left;
+}
+section.Skill h2 span {
+  font-size: 16px;
+  text-transform: lowercase;
+}
+section.Skill h2:first-of-type {
+  line-height: 1;
+}
+section.Skill .backline {
+  border-radius: 20px;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+section.Skill .linee .a1 {
+  width: 90%;
+}
+section.Skill .backline .a2 {
+  width: 90%;
+}
+section.Skill .backline .a3 {
+  width: 80%;
+}
+section.Skill .backline .a4 {
+  width: 80%;
+}
+section.Skill .backline .a5 {
+  width: 80%;
+}
+section.Skill .backline .a6 {
+  width: 80%;
+}
+section.Skill .backline .linee {
+  border-radius: 20px;
+  height: 10px;
+  background: #fe4a57;
+}
+
+/************** Portfolio ****************/
+
+#Portfolio {
+  background-color: #323647;
+}
+#Portfolio h1 {
+  color: #fff;
+  text-align: center;
+  font-family: sukar;
+  margin-bottom: 40px;
+}
+.picture {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+}
+.picture img {
+  width: 300px;
+  height: 220px;
+  border: 2px solid #fff;
+}
+section .container1 {
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height: 220px;
+}
+.over {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+.container1:hover .over {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 30%;
+  bottom: 60px;
+  width: 80%;
+  transform: translate(-10%, -200%);
+  -ms-transform: translate(-10%, -200%);
+}
+.desc {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-45%, 100%);
+  width: 80%;
+  -ms-transform: translate(-45%, 100%);
+}
+.text:first-of-type {
+  top: 50%;
+}
+.text:last-of-type {
+  top: 60%;
+}
+/************** Tistimonal ****************/
+
+#Tistimonal {
+  background-color: #282a39;
+  color: #fff;
+}
+#Tistimonal h1 {
+  color: #fff;
+  text-align: center;
+  font-family: sukar;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+.person {
+  background-color: #ffde59;
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.qut {
+  font-size: 70px;
+  background-color: #f1c40e;
+  padding: 10px 20px;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  left: 10px;
+  top: -30px;
+}
+#Tistimonal img {
+  width: 190px;
+  height: 150px;
+  margin: 50px;
+}
+.person p {
+  width: 240px;
+  color: #000;
+  font-size: 15px;
+  text-align: center;
+}
+.person .name {
+  font-size: 20px;
+  background-color: #f1c40e;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.person:nth-of-type(2) {
+  background-color: rgb(0, 194, 203);
+}
+.person:nth-of-type(2) .name {
+  background-color: #03989e;
+}
+.person:nth-of-type(2) .qut {
+  background-color: #03989e;
+}
+.person:nth-of-type(3) {
+  background-color: #eeaa94;
+}
+.person:nth-of-type(3) .name {
+  background-color: #d48a73;
+}
+.person:nth-of-type(3) .qut {
+  background-color: #d48a73;
+}
+.boxTist {
+  display: flex;
+  justify-content: center;
+}
+
+/************** Contact ****************/
+
+#Contact {
+  background-color: #323647;
+  color: #fff;
+  padding: 90px 0 50px 0;
+}
+.contactme {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont {
+  justify-content: space-around;
+  display: flex;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  background-color: #282a39;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.cont i {
+  color: #fe4a57;
+  font-size: 30px;
+  line-height: 100px;
+}
+.cont p {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(247, 233, 233);
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.cont h2 {
+  text-align: center;
+}
+
+/************** Footer ****************/
+footer {
+  background-color: #282a39;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+footer h2 {
+  color: #fe4a57;
+  margin-bottom: 20px;
+}
+footer .line {
+  width: 70px;
+  line-height: 20px;
+}
+footer .Account i {
+  margin: 20px;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 1px solid #fe4a57;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+}
+footer a {
+  color: rgba(221, 221, 221, 0.767);
+}
+footer a:hover {
+  color: #fff;
+}
+footer hr {
+  width: 100%;
+  margin: 20px 0;
+  background-color: rgb(182, 178, 178);
+}

@@ -1,0 +1,125 @@
+@media (max-width:952px) {
+  nav ul li a {
+      font-size: 16px;
+  }
+  #Service .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  #Service .circle{
+      width: 150px;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .picture{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .boxTist{
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .person{
+    margin-bottom: 50px;
+  }
+ 
+.cont{
+  justify-content: space-evenly;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+}
+footer{
+  padding: 50px 0;
+  height: 300px;
+}
+}
+@media (max-width: 858px){
+.item2 img {
+    width: 300px;
+    height: 300px;
+}
+
+@media(max-width:767px) {
+    #About {
+        flex-direction: column;   
+    }
+    #About .item1 {
+      width: 90%;
+    }
+    .item1{
+        width: 400px;
+        margin: 0 20px;
+       
+}
+@media (max-width: 900px) {
+  .picture { 
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+   }
+}
+@media (max-width: 600px) {
+  .picture {
+     grid-template-columns: repeat(1, 1fr); 
+     margin-bottom: 50px;
+    }
+    .boxTist{
+      flex-direction: column;
+    
+    }
+    .boxTist .person{
+      margin-bottom: 80px;
+    }
+  #Service .circle i:nth-of-type(1){
+    margin-left: -7px;
+  }
+  #Service .circle i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+  }
+ @media(max-width:767px) {
+  section.About .flex-con  {
+      flex-direction: column;
+  }
+  #Service .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Service .circle{
+      width: 150px;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  #Service .circle i{
+    font-size: 40px;
+  }
+  #Service .sev h3{
+    font-size: 25px;
+  }
+#Tistimonal .boxTist {
+  flex-direction: column;
+  align-items: center;
+}
+
+#Tistimonal .boxTist  .person {
+  margin-bottom: 40px;
+}
+  .item2 img{
+      width: 200px;
+      height: 200px;
+  }
+  .contactme{
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin-left: 45px;
+  }
+}
